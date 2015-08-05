@@ -51,7 +51,9 @@ ssl                | ``false``     | Connect to RabbitMQ via SSL
 Sample Complete-flow Flume config
 =================================
 
-The following file describes an example configuration of an Flume agent that uses a [Spooling directory source](http://flume.apache.org/FlumeUserGuide.html#spooling-directory-source), a [File channel](http://flume.apache.org/FlumeUserGuide.html#file-channel) and our Kafka Sink
+The following file describes an example configuration of an Flume agent that uses a [Spooling directory source]
+(http://flume.apache.org/FlumeUserGuide.html#spooling-directory-source), a [File channel](http://flume.apache
+.org/FlumeUserGuide.html#file-channel) and our RabbitMQ Sink
 
 ``` 
     # Name the components on this agent
