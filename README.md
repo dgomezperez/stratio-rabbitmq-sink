@@ -8,9 +8,9 @@ Configuration
 
 The available config parameters are:
 
-- `host` *(string, required)*: The driver class (e.g. `org.h2.Driver`, `org.postgresql.Driver`). **NOTE: Stratio JDBC Sink does not include any JDBC driver. You must add a JDBC driver to your Flume classpath.**
+- `host` *(string, required)*: The host to rabbitMQ
 
-- `port` *(string, required)*: A valid connection string to a database. Check the documentation for your JDBC driver for more information.
+- `port` *(string, required)*: The port to rabbitMQ
 
 - `user` *(string, required)*: A valid RabbitMQ username.
 
@@ -18,11 +18,11 @@ The available config parameters are:
 
 - `exchange` *(string)*: A exchange name, you can use this directly instead of queue
 
-- `routing-key` *(string)*:
+- `routing-key` *(string)*: A routing key to an exchange
 
 - `queue` *(string)*: A queue name, you can use this directly instead of exchange
 
-- `virtual-host` *(string)*: A queue name, you can use this directly instead of exchange
+- `virtual-host` *(string)*: By default /
 
 - `basic-properties` *(boolean)* : Use to Mapping Basic AMQP properties
 
